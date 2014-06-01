@@ -3,7 +3,7 @@ select  distinct nvl(zgen_email(sfrstcr_pidm,'*SHORT'),lower(spriden_id)) "user_
         ssbsect_subj_code||ssbsect_crse_numb||'-'||ssbsect_seq_numb||'-'||lower(f_student_get_desc('STVTERM',ssbsect_term_code,30)) "course_section_integration_id",
         sfrstcr_grde_code_mid "midterm_grade",
         sfrstcr_grde_code "final_grade",
-        sfrstcr_credit_hr "credit_hours",
+        sfrstcr_credit_hr "credit_hours2",
         sfrstcr_gmod_code "enrollment_type",
         sfrstcr_activity_date "modified_ts"
 from    stvrsts,
